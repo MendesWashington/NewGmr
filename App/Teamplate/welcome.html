@@ -1,0 +1,19 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{titulo}}</title>
+</head>
+<body>
+	{% for menu in menus %}
+		<h3><a href="{{menu.link}}">{{menu.nome}}</a></h3>
+	{% endfor %}
+	<br><br>
+	<hr />
+
+	{% for subMenu in subMenus %}
+		<li><a href="{{subMenu.link}}">{{subMenu.nome}}</a></li>
+	{% endfor %}
+
+	<footer style=" margin-top: 15%; text-align: center;">{{footer}}</footer>
+</body>
+</html>
